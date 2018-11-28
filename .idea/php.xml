@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PhpProjectServersManager">
+    <servers>
+      <server host="cmstest.loc" id="92068c14-ae0e-495f-b344-2a5f8f4852b5" name="Homestad">
+        <path_mappings>
+          <mapping local-root="$PROJECT_DIR$" remote-root="/var/www/html/cmstest.loc" />
+          <mapping local-root="$PROJECT_DIR$/webroot" remote-root="/var/www/html/cmstest.loc/webroot" />
+        </path_mappings>
+      </server>
+    </servers>
+  </component>
+  <component name="PhpProjectSharedConfiguration" php_language_level="7.2" />
+</project>
