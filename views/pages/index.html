@@ -1,4 +1,10 @@
-
-Это pages/index.html
+<h1 style="margin-top: 55px">
+Pages
+</h1>
 <!-- таким образом передаются данные из контроллера в представление -->
-<?=$data['test_content']?>
+<?php foreach($data['pages'] as $page_data) { ?>
+    <div style="margin-top: 25px">
+        <a href="/pages/view/<?=$page_data['alias']?>"><?=$page_data['title']?></a>
+    </div>
+
+<?php } ?>

@@ -18,7 +18,7 @@ class PagesController extends Controller {
     }
 
     public function index(){
-        $this->data['test_content'] = "Контент";//доступ соверщается по ключу
+        $this->data['pages'] = $this->model->getList();//доступ соверщается по ключу
     }
 
     public function view(){
@@ -27,7 +27,7 @@ class PagesController extends Controller {
         if(isset($params[0])){
 
             $alias = strtolower($params[0]);
-            $this->data['content']="Вот страница с  '{$alias}' алиасом";
+            $this->data['page']=$this->model->getByAlias($alias);
         }
     }
 }

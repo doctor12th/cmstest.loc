@@ -10,7 +10,7 @@ class Page extends Model{
     }
 
     public function getByAlias($alias){
-        $alias = $this->database-escape($alias);
+        $alias = $this->database->escape($alias);
         $sql = "select * from pages where alias = '{$alias}' limit 1";
         $result = $this->database->query($sql);
         return isset($result[0]) ? $result[0] : null;
