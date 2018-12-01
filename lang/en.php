@@ -7,4 +7,5 @@ return array(
     'lng.test' => 'Sample text',
     'err.msg' => 'Error 404: not found',
     'oops' => 'Ooops!',
+    'lng.admin' => 'Admin Section'
 );
