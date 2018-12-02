@@ -28,4 +28,8 @@ class Message extends Model {
         return $this->database->query($sql);
     }
 
+    public function getList(){
+        $sql = "select * from messages where 1";
+        return $this->database->query($sql);
+    }
 }
