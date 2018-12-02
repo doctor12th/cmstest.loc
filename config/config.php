@@ -24,3 +24,5 @@ Config::set('db_name','mvc');
 Config::set('host','localhost');
 Config::set('user','doctor');
 Config::set('password','Azathot');
+
+Config::set('salt','jd5jsasdk5j3lasdf45jalsd5');
